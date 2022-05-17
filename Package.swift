@@ -13,14 +13,16 @@ let package = Package(
             name: "CppBinio", 
             pkgConfig: "libbinio", 
             providers: [
-                .apt(["libbinio-dev"])
+                .apt(["libbinio-dev"]),
+                .brew(["libbinio"])
             ]
         ),
         .systemLibrary(
             name: "CppAdPlug", 
             pkgConfig: "adplug", 
             providers: [
-                .apt(["libadplug-dev"])
+                .apt(["libadplug-dev"]),
+                .brew(["adplug"])
             ]
         ),
         .target(name: "CAdPlug", dependencies: ["CppAdPlug", "CppBinio"]),
