@@ -1,0 +1,4 @@
+module CppBinio [system] {
+    header "CppBinio.hpp"
+    export *
+}

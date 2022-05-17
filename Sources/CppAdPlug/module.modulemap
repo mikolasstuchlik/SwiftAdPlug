@@ -1,0 +1,4 @@
+module CppAdPlug [system] {
+    header "CppAdPlug.hpp"
+    export *
+}
